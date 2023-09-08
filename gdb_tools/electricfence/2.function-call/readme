@@ -1,0 +1,5 @@
+the lefence would be able to rectify the overrun and underrun separately without any issue but if we run both overrun and underun with diff output files then lefence would perform single task only and next would be overrided 
+to solve this issue we set something
+cmd:- export EF_PROJECT_BELOW=1
+then compile:- gcc -g underrun.c -o under -lefence
+:- ./under

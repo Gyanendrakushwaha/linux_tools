@@ -1,0 +1,9 @@
+here overrun.c is the c file in which the memory is dynamically allocated for 3 units but the c compiler allocate extra memory here output diplayed and updated for 10 times in for, this should be a bug but normal gcc and gdb would not be able to rectifie heap bugs
+
+so we have installe da new package that is electric-fence
+cmd:-                     sudo apt-get install -y electric-fence
+
+then compile:-         gcc -g overrun.c -o out -lefence
+:-                          ./out
+
+in modifiedfunc.c we have decremented loops run to 3 that is exact size of memory

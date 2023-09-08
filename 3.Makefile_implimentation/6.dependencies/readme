@@ -1,0 +1,14 @@
+here arm issue is solved 
+here in Makefile
+cc is a variable
+
+the make will come to first target that is one
+target(one) contains dependencies that is one.o add.o sub.o
+
+one.o:one.c file.h// object file will be called
+
+
+add.o:add.c file.h// object file will be called
+
+
+sub.o:sub.c file.h// object file will be called

@@ -1,0 +1,16 @@
+here size is 5 of memory intialize 
+but in loop we started from 0 and we are going backward using -- means this will be underrun
+
+
+here normal gcc and gdb would not be able to rectifiy this bug and it will overrite in lowerboundry regions
+ then compile:- gcc -g underrun.c -o underrun 
+ then:- ./underrun
+ 
+ 
+although lefence is used for heap memory bugs but at one time it is capable for overrun or underrun, to again rectifie this underrun by lefence we have to set something
+in cmd:- export EF_PROJECT_BELOW=1
+ 
+ then compile:- gcc -g underrun.c -o underrun -lefence
+ then:- ./underrun
+ 
+ as expected he output will show only one print statement

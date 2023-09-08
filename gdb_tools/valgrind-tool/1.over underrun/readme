@@ -1,0 +1,8 @@
+valgrind
+cmd:- sudo apt install valgrind --classic
+
+used to identify errors due to heap memory
+cmd:- gcc -g file.c -o out
+cmd:- valgrind ./out
+
+
